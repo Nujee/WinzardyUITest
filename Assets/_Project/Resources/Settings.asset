@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17dbb2d98f10a044b20078d11ca83ee, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  <CharViewPrefab>k__BackingField: {fileID: 5359986916904418590, guid: 72af2d13056bbe3419d9ad9c464309e5, type: 3}
+  <ButtonsScaleData>k__BackingField:
+    ScaleFactor: 0.9
+    Duration: 0.1
+  <MainMenuButtonsShowData>k__BackingField:
+    Duration: 0.2
+    Delay: 0.1
+  <CharsViewportShowData>k__BackingField:
+    Duration: 0.5
+    Delay: 0
+  <BigIconShowData>k__BackingField:
+    Duration: 0.5
+    Delay: 0.3
+  <BackButtonShowData>k__BackingField:
+    Duration: 0.5
+    Delay: 0.6
+  <CharShowData>k__BackingField:
+    Duration: 0.2
+    Delay: 0.1
+  <SelectionIconUpdateDuration>k__BackingField: 0.2
+  <SelectionSliderUpdateDuration>k__BackingField: 0.4
