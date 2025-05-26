@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [DisallowMultipleComponent]
-public sealed class EntryPoint : MonoBehaviour
+public sealed class CharSelectionEntryPoint : MonoBehaviour
 {
     [field: SerializeField] public Database Database { get; private set; }
     [field: SerializeField] public Settings Settings { get; private set; }
@@ -10,17 +10,17 @@ public sealed class EntryPoint : MonoBehaviour
 
     private void Start()
     {
-        var innerDb = new Dictionary<int, CharData>();
+        var innerDatabase = new Dictionary<int, CharData>();
 
         foreach (var pair in Database.CharDatasById)
         {
-            innerDb[pair.Id] = pair.Value;
+            innerDatabase[pair.Id] = pair.Value;
         }
 
-        var model = new CharSelectionModel(innerDb);
-        var presenter = new CharSelectionPresenter(model, CharSelectionView);
+        var model = new CharSelectionModel(innerDatabase);
+        CharSelectionView.Init(innerDatabase, Settings);
 
-        CharSelectionView.Init(innerDb, Settings);
+        var presenter = new CharSelectionPresenter(model, CharSelectionView);
         presenter.Init();
     }
 }
