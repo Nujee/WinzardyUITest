@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 [DisallowMultipleComponent]
 public sealed class CharSelectionView : MonoBehaviour
